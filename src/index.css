@@ -1,13 +1,24 @@
-body {
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: #0c0a09;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #0c0a09, #15100e 60%, #1b1412);
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
