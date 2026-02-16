@@ -1,0 +1,195 @@
+.App {
+  background: #0c0a09;
+  color: #f6f1ed;
+}
+
+section {
+  position: relative;
+}
+
+.section-label {
+  font-size: 0.9rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  color: #c89279;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.btn-primary {
+  background: #ef8f7a;
+  color: #1a120f;
+  box-shadow: 0 12px 24px rgba(239, 143, 122, 0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-ghost {
+  border: 1px solid rgba(255, 244, 234, 0.4);
+  color: #fff4ea;
+  background: transparent;
+}
+
+.btn-ghost:hover {
+  transform: translateY(-2px);
+}
+
+.parallax-band {
+  height: 45vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.band-one {
+  background-image: linear-gradient(
+      rgba(12, 10, 9, 0.6),
+      rgba(12, 10, 9, 0.9)
+    ),
+    url('./content/bckgrnd.png');
+}
+
+.band-two {
+  background-image: linear-gradient(
+      rgba(12, 10, 9, 0.2),
+      rgba(12, 10, 9, 0.85)
+    ),
+    url('./content/bckgrnd.png');
+  transform: translateY(calc(var(--scrollY) * 0.02));
+}
+
+.projects {
+  padding: 120px 8vw;
+  background: #0f0b0a;
+}
+
+.projects-header {
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+
+.projects h2 {
+  font-family: 'Kanit', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin: 12px 0 18px;
+}
+
+.projects-intro {
+  color: rgba(255, 244, 234, 0.8);
+  line-height: 1.7;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.project {
+  background: rgba(255, 244, 234, 0.05);
+  border: 1px solid rgba(255, 244, 234, 0.12);
+  padding: 26px;
+  border-radius: 24px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s, border 0.3s;
+}
+
+.project h3 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.4rem;
+  margin: 0 0 12px;
+}
+
+.project p {
+  color: rgba(255, 244, 234, 0.8);
+  line-height: 1.6;
+}
+
+.project span {
+  margin-top: 16px;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #f6c4a7;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  border-color: rgba(239, 143, 122, 0.6);
+}
+
+.contact {
+  padding: 120px 8vw;
+  background: #f6f1ed;
+  color: #1a120f;
+}
+
+.contact-card {
+  max-width: 680px;
+  background: #fff;
+  border-radius: 32px;
+  padding: 48px;
+  box-shadow: 0 30px 60px rgba(24, 16, 13, 0.18);
+}
+
+.contact-card h2 {
+  font-family: 'Kanit', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 12px 0 16px;
+}
+
+.contact-card p {
+  color: #4f3b33;
+  line-height: 1.7;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 28px 0;
+}
+
+.contact-details {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: #7a5b4e;
+}
+
+@media (max-width: 768px) {
+  .parallax-band {
+    background-attachment: scroll;
+  }
+
+  .contact-card {
+    padding: 36px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .band-two {
+    transform: none;
+  }
+}

@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: #0c0a09;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #0c0a09, #15100e 60%, #1b1412);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
