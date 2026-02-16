@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import ScrollButton from "./ScrollButton"; // Scroll button component
+
 import './App.css';
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
       <div className='parallax-band band-two' aria-hidden='true' />
       <Contact id='contact' />
 
+      {}
+      <ScrollButton />
     </div>
   );
 }

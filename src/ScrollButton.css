@@ -1,0 +1,26 @@
+.scroll-btn {
+    position: fixed;        /* stays on screen */
+    bottom: 30px;           /* distance from bottom */
+    right: 30px;            /* distance from right */
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(246, 241, 237, 0.7); /* 70% opacity */
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    z-index: 9999;           /* always on top */
+  }
+  
+  .scroll-btn:hover {
+    background-color: rgba(246, 241, 237, 1); /* full opacity on hover */
+    transform: translateY(-2px);
+  }
+  
+  .scroll-btn:active {
+    transform: translateY(1px); /* button press effect */
+  }
+  

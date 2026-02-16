@@ -20,12 +20,11 @@ const Hero = () => {
           <a className='btn btn-primary' href='#projects'>
             View Work
           </a>
-          <a className='btn btn-ghost' href='#contact'>
+          <a className='btn btn-primary' href='#contact'>
             Book a Session
           </a>
         </div>
       </div>
-      <div className='hero-scroll'>Scroll</div>npm start -- --host 0.0.0.0
     </section>
   );
 };
