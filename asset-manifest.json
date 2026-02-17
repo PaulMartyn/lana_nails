@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PaulMartyn/lana_nails/static/css/main.a4339307.css",
+    "main.js": "/PaulMartyn/lana_nails/static/js/main.e2d56d79.js",
+    "static/media/bckgrnd.png": "/PaulMartyn/lana_nails/static/media/bckgrnd.ffa91c0c8eb8445680e7.png",
+    "static/media/profile.JPG": "/PaulMartyn/lana_nails/static/media/profile.177f9f4e469daff7b976.JPG",
+    "index.html": "/PaulMartyn/lana_nails/index.html",
+    "main.a4339307.css.map": "/PaulMartyn/lana_nails/static/css/main.a4339307.css.map",
+    "main.e2d56d79.js.map": "/PaulMartyn/lana_nails/static/js/main.e2d56d79.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4339307.css",
+    "static/js/main.e2d56d79.js"
+  ]
+}
