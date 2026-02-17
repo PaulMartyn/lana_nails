@@ -1,14 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./ScrollButton.css";
 
 const ScrollButton = () => {
-  const [atTop, setAtTop] = useState(true);
 
-  // Update scroll position
   const handleScroll = () => {
-    const scrollY = window.scrollY;
-    const bottomReached = window.innerHeight + window.scrollY >= document.body.scrollHeight;
-    setAtTop(scrollY === 0);
+    // You can keep this empty if you're not tracking state
   };
 
   useEffect(() => {
@@ -16,7 +12,6 @@ const ScrollButton = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scroll to top or bottom
   const scrollPage = () => {
     if (window.scrollY === 0) {
       window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
